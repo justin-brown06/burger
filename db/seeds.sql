@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name) VALUES ("HAWAIIAN"),("WESTERN"),("CALIFORNIA");
