@@ -1,5 +1,5 @@
 $(function () {
-    $(".change-sleep").on("click", function (event) {
+    $(".change-devoured").on("click", function (event) {
         var id = $(this).data("id");
         var newDevoured = $(this).data("newdevoured");
 
@@ -25,7 +25,7 @@ $(function () {
 
         var newBurger = {
             name: $("#ca").val().trim(),
-            sleepy: $("[name=devoured]:checked").val().trim()
+            devoured: $("[name=devoured]:checked").val().trim()
         };
 
         $.ajax("/api/burgers", {
