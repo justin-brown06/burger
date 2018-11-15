@@ -39,4 +39,23 @@ $(function () {
             }
         );
     });
+
+    $(".delete-burger").on("click", function (event) {
+
+        event.preventDefault();
+
+        //todo get this done for the delete function to work!
+        let id = $(this).attr("data-id")
+        console.log(id)
+
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE",
+        }).then(
+            function () {
+                console.log("created new burger");
+                
+                location.reload();
+            }
+        );
+    });
 });
